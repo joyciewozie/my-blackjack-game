@@ -126,7 +126,7 @@ hitButton.addEventListener("click", function () {
   var output = document.getElementById("output-div");
 
   if (playerScore < 21 && computerScore < 21) {
-    output.innerHTML = `To continue, press Hit or Stand.`;
+    output.innerHTML = `To continue, press Hit (draw one new card) or Stand (end your turn).`;
   } else {
     output.innerHTML = clearOutcomes();
     var showDealer = displayDealer();
@@ -179,7 +179,7 @@ hitButton.addEventListener("click", function () {
 var resetButton = document.getElementById("reset-button");
 resetButton.addEventListener("click", function () {
   var output = document.getElementById("output-div");
-  output.innerText = `The game has been reset. Press "Start" to play.`;
+  output.innerText = `The game has been reset, press Start to play.`;
 
   // This code can remove all the cards!!
   var allCards = document.querySelectorAll(".cards")
@@ -302,11 +302,11 @@ var activateButtons = function() {
 
 var displayMsg = function () {
   if (winner == "player") {
-    return `You win this game!`;
+    return `🎉 You win this game`;
   } else if (winner == "computer") {
-    return `Dealer wins this game!`;
+    return `Dealer wins this game`;
   } else if (winner == "tie") {
-    return `This game is a tie!`;
+    return `This game is a tie`;
   }
 };
 
