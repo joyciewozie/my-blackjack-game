@@ -1,0 +1,109 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: white;
+  color: black; /* sets the font color */
+  background-image: url(""); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#output-div img {
+  display: block;
+  max-width: 100%;
+  max-height: 200px;
+}
+.header {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.subheader {
+  font-weight: bold;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  /* padding: 38px 31px; */
+  text-align: center;
+  align-items: center;
+}
+
+#top-card {
+  text-align: left
+}
+
+/* .card {
+  width: 80%;
+  margin: 40px auto;
+} */
+
+button {
+  background-color: white;
+  font-size: 21px;
+  line-height: 33px;
+  margin: 0 0 23px 0;
+  padding: 0 6px;
+}
+
+#output-div {
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.logo-img {
+  height: 49px;
+  position: relative;
+  top: 22px;
+}
+
+.card-img-top{
+  height: 25vh;
+  object-fit: cover;
+}
+
+#hand {
+  border: none;
+}
+
+#cards-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.cards-player{
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.cards {
+  width: 200px;
+  border: black solid 2px;
+  border-radius: 5%;
+  margin: 4px;
+  /* height: 100%; */
+}
+.cards-dealer{
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+
+/* increase header font size on wider screens */
+@media screen and (min-width: 600px) {
+  .header {
+    font-size: 2rem;
+  }
+}
