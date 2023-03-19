@@ -27,5 +27,51 @@
     </div>
   </div>
   </div>
+
+   <!--Msg board-->
+   <div class="container">
+    <div id="output-div" class="alert alert-success" role="alert" style="height: 5vh text-center">
+      Press New Game to begin
+    </div>
+    </div>
+
+    <!--Buttons-->
+    <div class="container">
+        <button type="button" id="start-button" class="btn btn-outline-success">Start</button>
+        <button type="button" id="hit-button" class="btn btn-outline-success">Hit</button>
+        <button type="button" id="stand-button" class="btn btn-outline-success">Stand</button>
+        <button type="button" id="reset-button" class="btn btn-outline-success">Reset</button>
+        <div class="cards-container">
+    </div>
+
+    <!--Cards container-->
+    <div id="cards-container" class="container">
+      <!-- Player's hand -->
+      <div class="cards-container-player">
+        <div id="hand" class="card">
+          <div class="card-body">
+            Your hand: <span id="player-points"></span>
+          </div>
+        </div>
+            <!-- <p>Your hand: <span id="player-points"></span></p> -->
+              <div class="cards-player">
+                <!-- <div class="card"><img src="./images/aceOfClubs.jpg"></div> -->
+              </div>
+          </div>
+            <!-- Dealer's hand -->
+              <div class="cards-container-dealer">
+                <div class="cards-container-player">
+                  <div id="hand" class="card">
+                    <div class="card-body">
+                      Dealer's hand: <span id="dealer-points"></span>
+                    </div>
+                  </div>
+                  <div class="cards-dealer">
+                    <!-- insert dealer's cards -->
+                  </div>
+                  </div>
+              </div>
+          </div>
+
 </body>
 </html>
