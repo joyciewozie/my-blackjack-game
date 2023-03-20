@@ -291,7 +291,7 @@ var displayDealer = function() {
 var disableButtons = function() {
   document.getElementById("hit-button").disabled = true;
   document.getElementById("stand-button").disabled = true;
-  document.getElementById("reset-button").disabled = true;
+  document.getElementById("start-button").disabled = true;
 }
 
 var activateButtons = function() {
