@@ -43,6 +43,7 @@ startButton.addEventListener("click", function () {
   allCards.forEach(function (card){
     card.remove()
   });
+  var hideScore = disableScore()
   var showButtons = activateButtons()
   // Reset game
   deck = [];
@@ -188,11 +189,6 @@ resetButton.addEventListener("click", function () {
     card.remove();
   })
 
-  var playerScore = document.getElementById("player-points")
-  playerScore.style.visibility = "hidden";
-  var computerScore = document.getElementById("dealer-points")
-  computerScore.style.visibility = "hidden";
-
   var hideButtons = disableButtons()
 });
 
@@ -298,6 +294,13 @@ var activateButtons = function() {
   document.getElementById("hit-button").disabled = false;
   document.getElementById("stand-button").disabled = false;
   document.getElementById("reset-button").disabled = false;
+}
+
+var disableScore = function() {
+  var playerScore = document.getElementById("player-points")
+  playerScore.style.visibility = "hidden";
+  var computerScore = document.getElementById("dealer-points")
+  computerScore.style.visibility = "hidden";
 }
 
 var displayMsg = function () {
