@@ -297,7 +297,7 @@ var disableButtons = function() {
 var activateButtons = function() {
   document.getElementById("hit-button").disabled = false;
   document.getElementById("stand-button").disabled = false;
-  document.getElementById("reset-button").disabled = false;
+  document.getElementById("start-button").disabled = false;
 }
 
 var displayMsg = function () {
